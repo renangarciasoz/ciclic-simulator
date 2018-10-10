@@ -3,8 +3,8 @@ import { injectGlobal, ThemeProvider } from 'styled-components';
 import { themeDefault } from './themes/default';
 
 import { Provider } from 'react-redux';
-import store from './store';
-import Routes from './routes';
+import store from '../store';
+import Routes from '../routes';
 
 injectGlobal`
   body {

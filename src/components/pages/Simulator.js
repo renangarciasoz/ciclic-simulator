@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { simulatorData } from '../actions/simulator';
+import { simulatorData } from '../../actions/simulator';
 import styled from 'styled-components';
-import logo from '../ciclic.svg';
+import logo from '../../assets/ciclic.svg';
 
 const SimulatorWrapper = styled.div`
     width: 100%;
@@ -34,14 +34,14 @@ const Fieldset = styled.fieldset`
 const Label = styled.label`
     font-size: 18px;
     font-weight: 400;
-    color: #324b68;
+    color: ${props => props.theme.secondary};
     margin-bottom: 3px;
 `
 
 const FieldWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    border-bottom: 2px solid #324b68;
+    border-bottom: 2px solid ${props => props.theme.secondary};
     padding-top: 1px; 
     padding-bottom: 4px;
 `
@@ -51,13 +51,13 @@ const FieldInput = styled.input`
     outline: none;
     font-size: 32px;
     font-weight: 600;
-    color: #2f4b68;
+    color: ${props => props.theme.primary};
 `
 
 const TextYear = styled.span`
     font-size: 32px;
     font-weight: 500;
-    color: #2f4b68;
+    color: ${props => props.theme.primary};
 `
 
 const FieldIcon = styled.span`
@@ -98,7 +98,7 @@ class Simulator extends React.Component {
     render() {
         return (
             <SimulatorWrapper>
-                <Logo src={logo} alt="ciclic logo"/>
+                {/* <Logo src={logo} alt="ciclic logo"/> */}
 
                 <Form>
                     <Fieldset>

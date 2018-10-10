@@ -2,8 +2,8 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import { ConnectedRouter } from "connected-react-router";
 
-import Simulator from "../pages/Simulator";
-import Simulation from "../pages/Simulation";
+import Simulator from "../components/pages/Simulator";
+import Simulation from "../components/pages/Simulation";
 
 import history from "./history";
 

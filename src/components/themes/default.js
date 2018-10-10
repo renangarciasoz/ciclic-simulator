@@ -1,6 +1,6 @@
 export const themeDefault = {
-    primary: '#ff0198',
-    secondary: '#01c1d6',
+    primary: '#2f4b68',
+    secondary: '#324b68',
     danger: '#eb238e',
     light: '#f4f4f4',
     dark: '#222'
