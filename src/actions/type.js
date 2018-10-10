@@ -1,0 +1,1 @@
+export const SET_SIMULATOR_DATA = 'SET_SIMULATOR_DATA';

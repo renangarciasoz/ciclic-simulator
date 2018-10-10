@@ -5,11 +5,13 @@
   "dependencies": {
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
+    "connected-react-router": "^4.5.0",
     "history": "^4.7.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-intl-currency-input": "^0.1.9",
     "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.4",
     "react-text-mask": "^5.4.3",
