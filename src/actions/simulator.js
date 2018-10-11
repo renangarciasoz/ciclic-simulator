@@ -1,20 +1,23 @@
-// import axios from 'axios';
+import axios from 'axios';
 import { SET_SIMULATOR_DATA } from './type';
 
-export function setSimulatorData(value, resultApi) {
+export function setSimulatorData(data, result) {
     return {
         type: SET_SIMULATOR_DATA,
         simulation: {
-            name: value && value.name,
-            money: value && value.money,
-            time: value && value.time,
-            resultApi: resultApi && resultApi
+            name: data.name || '',
+            money: data.money || 0,
+            time: data.time || 0,
+            result: result && result
         }
     }   
 }
 
-export function simulatorData(value) {
+export function getSimulation(data, expr) {
     return dispatch => {
-        dispatch(setSimulatorData(value));
+        return axios.post('http://api.mathjs.org/v4/', expr).then(res => {
+            const result = res.data;
+            dispatch(setSimulatorData(data, result));
+        });
     }
 }

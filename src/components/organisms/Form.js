@@ -2,8 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 
 const styles = css`
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
