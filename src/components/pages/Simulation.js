@@ -25,6 +25,8 @@ const SimulationComponent = styled.div`
 `
 
 class Simulation extends React.Component {
+    
+    // Função que formata o number para R$.
     format(data){
         return data && data.toLocaleString('pt-BR', {
             style: 'currency',

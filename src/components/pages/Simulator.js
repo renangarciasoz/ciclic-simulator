@@ -22,7 +22,7 @@ class Simulator extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: 'Renan',
+            name: '',
             money: 0,
             time: 12,
             disable: false
@@ -32,6 +32,7 @@ class Simulator extends React.Component {
         this.handleChange = this.handleChange.bind(this);
     }
 
+    // Gerar as opções do select de anos.
     getOptionsSelect(){
         let options = []
 
@@ -42,6 +43,8 @@ class Simulator extends React.Component {
         return options
     }
 
+    // Formata o dado da expressão para ativar a action que realiza o POST para API.
+    // Se vier uma resposta enviar para a próxima página, ou se vier um erro exibir um warning no console.
     onSubmit(data) {
         this.setState({disable: true})
 
@@ -58,6 +61,7 @@ class Simulator extends React.Component {
         );
     }
 
+    // Função que atualiza o state de cada fieldset(money, time e text) conforme o campo.
     handleChange(data, product) {
         if(product === 'time') {
             return this.setState({time: data})
