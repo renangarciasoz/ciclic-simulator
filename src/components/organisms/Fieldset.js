@@ -50,6 +50,10 @@ const styles = css`
         option {
             font-size: 20px;
         }
+
+        @media screen and (max-width: 800px) {
+            font-size: 22px;
+        }
     }
 
     input {
