@@ -16,8 +16,11 @@ const SimulationComponent = styled.div`
     }
 
     @media screen and (max-width: 800px) {
-        padding: 0 20px;
         height: 60vh;
+
+        span {
+            padding: 0 25px;
+        }
     }
 `
 
