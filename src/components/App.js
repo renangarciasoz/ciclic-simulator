@@ -31,6 +31,7 @@ const styles = css`
 
     content {
       border-radius: 0px;
+      padding: 40px 15px;
     }
   }
 `

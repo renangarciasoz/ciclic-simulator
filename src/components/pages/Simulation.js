@@ -16,7 +16,8 @@ const SimulationComponent = styled.div`
     }
 
     @media screen and (max-width: 800px) {
-        height: 90vh;
+        margin-top: 10vh;
+        height: 70vh;
     }
 `
 
