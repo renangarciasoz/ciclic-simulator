@@ -26,6 +26,11 @@ const styles = css`
         padding-bottom: 4px;
         padding-left: 2px;
         padding-right: 4px;
+
+        @media screen and (max-width: 800px) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
     }
 
     select {
@@ -54,6 +59,10 @@ const styles = css`
         font-size: 32px;
         font-weight: 600;
         color: ${props => props.theme.primary};
+
+        @media screen and (max-width: 800px) {
+            font-size: 22px;
+        }
     }
 
     span {

@@ -27,11 +27,13 @@ const styles = css`
   }
 
   @media screen and (max-width: 800px) {
+    width: 100%;
     padding: 0;
 
     content {
+      width: 90%;
       border-radius: 0px;
-      padding: 40px 15px;
+      padding: 40px 0;
     }
   }
 `
