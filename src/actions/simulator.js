@@ -15,7 +15,7 @@ export function setSimulatorData(data, result) {
 
 export function getSimulation(data, expr) {
     return dispatch => {
-        return axios.post('https://api.mathjs.org/v4/', expr).then(res => {
+        return axios.post('http://api.mathjs.org/v4/', expr).then(res => {
             const result = res.data;
             dispatch(setSimulatorData(data, result));
         });
